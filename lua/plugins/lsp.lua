@@ -1,9 +1,14 @@
   return {
     {
+      "williamboman/mason.nvim",
+      opts = require('configs.overrides').mason
+    },
+    {
+      "williamboman/mason-lspconfig.nvim",
+    },
+    {
       "neovim/nvim-lspconfig",
-      config = function()
-        require "configs.lspconfig"
-      end, -- Override to setup mason-lspconfig
+      lazy = true,
     },
     {
       'onsails/lspkind.nvim',

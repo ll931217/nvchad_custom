@@ -76,7 +76,7 @@ return {
   {
     "NvChad/nvterm",
     config = function()
-      require("nvterm").setup(require("custom.configs.nvterm"))
+      require("nvterm").setup(require("configs.nvterm"))
     end,
   },
 

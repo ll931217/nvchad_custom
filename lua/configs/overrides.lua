@@ -37,38 +37,10 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- golang
+    "gopls",
+    "golangci-lint",
   },
 }
-
--- git support in nvimtree
-M.nvimtree = {
-  reload_on_bufenter = true,
-
-  git = {
-    enable = true,
-  },
-
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
-  },
-
-  -- view = {
-  --   float = {
-  --     enable = true,
-  --     open_win_config = {
-  --       border = "rounded",
-  --       width = 100,
-  --       height = 30,
-  --       row = 10,
-  --       col = 58,
-  --     }
-  --   }
-  -- },
-}
-
 return M
